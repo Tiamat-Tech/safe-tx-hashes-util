@@ -25,6 +25,7 @@ This Bash [script](./safe_hashes.sh) calculates the Safe transaction hashes by r
     - [Basic Usage](#basic-usage)
     - [Using Message Files](#using-message-files)
     - [With Environment Variables](#with-environment-variables)
+  - [Qubes OS](#qubes-os)
 - [Safe Transaction Hashes](#safe-transaction-hashes)
   - [Interactive Mode](#interactive-mode)
   - [Transaction Simulation](#transaction-simulation)
@@ -276,6 +277,10 @@ docker compose run --rm -e NO_COLOR=true safe-tx-hashes-util \
 
 > [!IMPORTANT]
 > Running in a [Docker](https://www.docker.com) container offers isolation, but it is important to always follow the [Security Best Practices](#security-best-practices-for-using-this-script).
+
+### Qubes OS
+
+A [Qubes OS](https://www.qubes-os.org) [Salt](https://doc.qubes-os.org/en/latest/user/advanced-topics/salt.html) configuration for building a minimal, reproducible template VM that includes this [script](./safe_hashes.sh) and the [Foundry](https://github.com/foundry-rs/foundry) toolchain is available [here](https://github.com/pcaversaccio/safe-tx-hashes-util-qubes).
 
 ## Safe Transaction Hashes
 
